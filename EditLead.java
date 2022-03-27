@@ -67,6 +67,14 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 			
 			String title=driver.getTitle();  //Get the Title of Resulting Page
 			System.out.println(title);
+			if(driver.getTitle().equals("View Lead | opentaps CRM")) {
+				System.out.println("Test Passed");
+			}
+			else
+			{
+				System.out.println("Test Failed");
+			}
+			driver.close();
 			
 			
 				
