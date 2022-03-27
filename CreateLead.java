@@ -58,10 +58,14 @@ package week2.day1.assignment;
 			spDD.selectByVisibleText("New York");  					//Select State/Province as NewYork Using Visible Text
 			driver.findElement(By.className("smallSubmit")).click(); 	//Click on Create Button
 			
-			
-			String title=driver.getTitle();
-			System.out.println(title);
-			
+			if(driver.getTitle().equals("View Lead | opentaps CRM")) {
+				System.out.println("Test Passed");
+			}
+			else
+			{
+				System.out.println("Test Failed");
+			}
+			driver.close();
 			
 				
 
