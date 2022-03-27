@@ -81,6 +81,16 @@ package week2.day1.assignment;
 			
 
 			System.out.println("The page after creating duplicate details title:  " + titleupdated);
+			
+			if(driver.getTitle().equals("View Lead | opentaps CRM")) {
+				System.out.println("Test Passed");
+			}
+			else
+			{
+				System.out.println("Test Failed");
+			}
+			driver.close();
+			
 		
 			
 	
